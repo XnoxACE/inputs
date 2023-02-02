@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Checkbox Ex</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js">
+
+		</script>
+	</head>
+
+	<body>
+		<h1>A Basic Form</h1>
+		<hr>
+		<form action="#">
+		<fieldset>
+			<legend>Form Information</legend>
+
+			<div id="colorBlock">
+                <h2>color</h2>
+            </div>
+			
+			
+            <input type="range" id="red" 
+            min="-0" max="255" value="0" step="1" oninput="setRed()">
+
+            <input type="range" id="green" 
+            min="-0" max="255" value="0" step="1" oninput="setGreen()">
+
+            <input type="range" id="blue" 
+            min="-0" max="255" value="0" step="1" oninput="setBlue()">
+
+			<input type="button" value="Send Form" ">
+
+            
+      
+		</fieldset>	
+		</form>
+
+		<script type="text/javascript">
+
+                let red;
+                let green;
+                let blue;
+			 
+				 function setRed() {
+
+                   let redNum = $("#red").val();
+
+                   let redHex = redNum.toString(16);
+                   red = redHex;
+
+
+				}
+                function setGreen() {
+
+                let redNum = $("#red").val();
+
+                let redHex = redNum.toString(16);
+                red = redHex;
+
+
+                }
+                function setRed() {
+
+                let redNum = $("#red").val();
+
+                let redHex = redNum.toString(16);
+                red = redHex;
+
+
+                }
+                $(window).ready(
+				function() {
+					$("#colorBlock").css("background-color", '#ffffff');
+				}
+			);
+				
+			
+
+			
+		</script>
+	</body>
+</html>
